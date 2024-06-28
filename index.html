@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Proyecto Agencia de Viajes</title>
+<!-- Tailwind CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+<!-- Font Awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Custom Styles -->
+ <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-gray-100">
+<!-- Header -->
+<header class="bg-blue-700 text-white">
+ <nav class="container mx-auto max-w-7xl px-4 sm:px-8 lg:px-8">
+  <ul class="flex h-16 items-center justify-between">
+   <div class="flex items-center space-x-4">
+    <li><a href="#" class="text-gray-200 hover:bg-blue-600 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Inicio</a></li>
+    <li><a href="./pages/destinos.html" class="text-gray-200 hover:bg-blue-600 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Destinos</a></li>
+    <li><a href="./pages/contacto.html" class="text-gray-200 hover:bg-blue-600 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Contacto</a></li>
+   </div>
+  </ul>
+ </nav>
+</header>
+<!-- Main Content -->
+<main class="container mx-auto space-y-8 px-0 py-10">
+<!-- Sección Introductoria -->
+ <section class="bg-white shadow-md rounded-lg overflow-hidden">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 px-14">
+   <div class="flex flex-col justify-center items-center">
+    <h2 class="text-4xl font-semibold text-gray-800 mb-4">Viví tus sueños</h2>
+    <p class="text-xl text-gray-700 mb-4">Descubre nuevos destinos con nosotros</p>
+   </div>
+   <div class="flex justify-center items-center">
+    <img class="object-cover h-80 w-full md:h-auto rounded-lg" src="./Imagenes/portada-min.png" alt="Viaje">
+   </div>
+  </div>
+ </section>
+<!-- Sección de Bienvenida -->
+ <section class="bg-white shadow-md rounded-lg overflow-hidden py-8 px-14">
+  <h2 class="text-3xl text-center text-gray-800 mb-4">Bienvenido a nuestra agencia de viajes</h2>
+  <p class="text-lg text-gray-700 leading-relaxed">
+   ¿Buscas la mejor manera de planificar tus vacaciones? En nuestra agencia, te ofrecemos las mejores opciones para explorar el mundo. Desde playas paradisíacas hasta emocionantes excursiones por la montaña, ¡aquí encontrarás todo lo que necesitas para tu próximo viaje inolvidable!
+  </p>
+ </section>
+<!-- Sección de Destinos Disponibles -->
+ <section class="bg-white shadow-md rounded-lg overflow-hidden py-8 px-4">
+  <h2 class="text-3xl text-center text-gray-800 mb-4">Destinos Disponibles</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+   <div class="flex flex-col items-center space-y-2">
+    <a href="./pages/destinos.html">
+     <img src="./Imagenes/playaportada-min.jpg" alt="Playa" class="h-64 w-full object-cover rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105">
+     <p class="text-xl font-medium text-gray-800 mt-2">Playa</p>
+    </a>
+   </div>
+   <div class="flex flex-col items-center space-y-2">
+    <a href="./pages/destinos.html">
+     <img src="./Imagenes/montañasportada-min.jpg" alt="Montañas" class="h-64 w-full object-cover rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105">
+     <p class="text-xl font-medium text-gray-800 mt-2">Montaña</p>
+    </a>
+   </div>
+   <div class="flex flex-col items-center space-y-2">
+    <a href="./pages/destinos.html">
+     <img src="./Imagenes/ciudadportada-min.jpg" alt="Ciudad" class="h-64 w-full object-cover rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105">
+     <p class="text-xl font-medium text-gray-800 mt-2">Ciudad</p>
+    </a>
+   </div>
+  </div>
+ </section>
+<!-- Sección de Horarios de Atención -->
+ <section class="bg-white shadow-md rounded-lg overflow-hidden py-10 px-14">
+  <h2 class="text-3xl text-center text-gray-800 mb-5">Horarios De Atención</h2>
+  <div class="grid col-span-1 text-center text-xl text-gray-700">
+   <p><strong>Lunes a Viernes:</strong> 9:00 am - 18:00 pm</p>
+   <p><strong>Sábados:</strong> 9:00 am - 12:00 pm</p>
+   <p><strong>Domingos:</strong> Cerrado</p>
+  </div>
+ </section>
+<!-- Sección de Redes Sociales -->
+ <section class="bg-white shadow-md rounded-lg overflow-hidden py-7 px-10">
+  <h2 class="text-3xl text-center text-gray-800 px-0 pb-7">Nuestras Redes Sociales</h2>
+  <div class="flex justify-center gap-14 items-center space-x-4 transition duration-300 ease-in-out">
+   <a href="#" class="text-4xl text-blue-600 transform transition-all duration-300 ease-in-out hover:scale-110 hover:text-blue-700">
+    <i class="fab fa-twitter"></i>
+   </a>
+   <a href="#" class="text-4xl text-blue-600 transform transition-all duration-300 ease-in-out hover:scale-110 hover:text-blue-700">
+    <i class="fab fa-facebook-f"></i>
+   </a>
+   <a href="#" class="text-4xl text-blue-600 transform transition-all duration-300 ease-in-out hover:scale-110 hover:text-blue-700">
+    <i class="fab fa-instagram"></i>
+   </a>
+   <a href="#" class="text-4xl text-blue-600 transform transition-all duration-300 ease-in-out hover:scale-110 hover:text-blue-700">
+    <i class="fab fa-linkedin-in"></i>
+   </a>
+  </div>
+ </section>
+<!-- Sección de Testimonios -->
+ <section class="bg-white shadow-md rounded-lg overflow-hidden pt-14 px-10 pb-14">
+  <h2 class="text-3xl text-center text-gray-800 mb-4 pb-6">Testimonios de Clientes</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-14">
+   <div class="p-4 bg-gray-100 rounded-lg">
+    <p class="text-lg text-gray-700 leading-relaxed">
+     "Gracias a la agencia de viajes, pude disfrutar de unas vacaciones increíbles en Japón. El servicio fue excelente y todo estaba perfectamente organizado."
+    </p>
+    <p class="text-gray-600 mt-2">- María Gutiérrez</p>
+   </div>
+   <div class="p-4 bg-gray-100 rounded-lg">
+    <p class="text-lg text-gray-700 leading-relaxed">
+     "Recomiendo totalmente esta agencia. Me ayudaron a planificar un viaje familiar que siempre recordaremos. ¡Profesionales y confiables!"
+    </p>
+    <p class="text-gray-600 mt-2">- Juan Pérez</p>
+   </div>
+  </div>
+ </section>
+<!-- Sección de Sobre Nosotros -->
+ <section class="bg-white shadow-md rounded-lg overflow-hidden py-7 px-14">
+  <h2 class="text-3xl text-center text-gray-800 mb-4">Sobre Nosotros</h2>
+  <p class="text-lg text-gray-700 leading-relaxed">
+   Somos una agencia de viajes dedicada a hacer realidad los sueños de nuestros clientes. Con años de experiencia en el sector, nos esforzamos por ofrecer experiencias únicas y memorables en cada destino que visitamos. Nuestro equipo de expertos está aquí para ayudarte a planificar tu próximo viaje de la mejor manera posible.
+  </p>
+ </section>
+<!-- Sección de Ofertas Especiales -->
+ <section class="bg-white shadow-md rounded-lg overflow-hidden py-8 px-9">
+  <h2 class="text-3xl text-center text-gray-800 m-0 pb-8">Ofertas Especiales</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+   <div class="flex flex-col items-center space-y-4 gap-4">
+    <div class="p-4 bg-gray-100 rounded-lg">
+     <h3 class="text-xl font-medium text-gray-800">Descuento de Verano</h3>
+     <p class="text-lg text-gray-700 leading-relaxed">
+      ¡Reserva ahora y obtén un 20% de descuento en todos nuestros paquetes de playa! No te pierdas esta oferta limitada.
+     </p>
+    </div>
+    <div class="p-4 bg-gray-100 rounded-lg">
+     <h3 class="text-xl font-medium text-gray-800">Paquete Familiar</h3>
+     <p class="text-lg text-gray-700 leading-relaxed">
+      Planifica unas vacaciones familiares inolvidables con nuestro paquete especial que incluye actividades para todas las edades.
+     </p>
+    </div>
+   </div>
+   <div class="flex flex-col items-center space-y-4 gap-4">
+    <div class="p-4 bg-gray-100 rounded-lg">
+     <h3 class="text-xl font-medium text-gray-800">Escapada Romántica</h3>
+     <p class="text-lg text-gray-700 leading-relaxed">
+      Sorprende a tu pareja con una escapada romántica a destinos exclusivos. ¡Ideal para celebrar momentos especiales juntos!
+     </p>
+    </div>
+    <div class="p-4 bg-gray-100 rounded-lg">
+     <h3 class="text-xl font-medium text-gray-800">Tour de Aventura</h3>
+     <p class="text-lg text-gray-700 leading-relaxed">
+      Experimenta la emoción de la aventura con nuestro tour guiado a las montañas más impresionantes del mundo.
+     </p>
+    </div>
+   </div>
+  </div>
+ </section>
+<!-- Sección de Información Financiera -->
+<!-- Sección de Información Financiera con animación en íconos de métodos de pago -->
+ <section class="bg-white shadow-md rounded-lg overflow-hidden py-6 px-0">
+  <div class="max-w-4xl mx-auto">
+   <div class="text-center mb-4 py-4">
+    <h2 class="text-3xl text-gray-800 mb-4 py-2">Aceptamos todos los bancos</h2>
+    <p class="text-lg text-gray-700 leading-relaxed py-4">
+     ¡Trabajamos con todos los bancos para ofrecerte la mejor opción de financiamiento! Disfruta de hasta 6 cuotas sin interés en todos nuestros servicios.
+    </p>
+   </div>
+<!-- Iconos de métodos de pago con transición al pasar el cursor -->
+   <div class="flex justify-center flex-wrap gap-4">
+    <i class="fab fa-cc-visa text-3xl md:text-4xl lg:text-5xl text-blue-600 transition duration-300 ease-in-out transform hover:scale-110"></i>
+    <i class="fab fa-cc-mastercard text-3xl md:text-4xl lg:text-5xl text-red-600 transition duration-300 ease-in-out transform hover:scale-110"></i>
+    <i class="fab fa-cc-amex text-3xl md:text-4xl lg:text-5xl text-blue-400 transition duration-300 ease-in-out transform hover:scale-110"></i>
+    <i class="fab fa-cc-paypal text-3xl md:text-4xl lg:text-5xl text-blue-500 transition duration-300 ease-in-out transform hover:scale-110"></i>
+   </div>
+  </div>
+ </section>
+</main>
+<!-- Footer -->
+<footer class="bg-blue-700 text-white text-center py-4">
+ <p class="text-lg text-gray-200 m-0 py-1">&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
